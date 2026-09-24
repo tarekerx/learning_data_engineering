@@ -28,4 +28,4 @@ This project is designed to answer questions such as:
 
 ## Data-quality priorities
 
-The project prioritizes detecting duplicate customers, invalid prices, and incomplete order records.
+The project prioritizes accurate customer identities, reliable revenue calculations, complete product references, duplicate customer detection, invalid price detection, and incomplete order identification.
