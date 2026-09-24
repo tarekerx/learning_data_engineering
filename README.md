@@ -1,0 +1,16 @@
+# Retail Sales Data Quality and Analytics Pipeline
+
+## Business goal
+
+Build a trustworthy retail data solution that helps the business understand customer value, product performance, and revenue trends.
+
+The project will also identify data problems such as missing customer information, duplicate records, invalid prices, invalid quantities, and broken product references.
+
+## Planned capabilities
+
+- Customer and sales reporting
+- Product and category performance analysis
+- Revenue trend analysis
+- Data-quality profiling
+- Automated validation tests
+- Reproducible local setup
