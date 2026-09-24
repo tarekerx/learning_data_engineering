@@ -25,3 +25,7 @@ This project is designed to answer questions such as:
 - Which products perform best within each category?
 - Is revenue increasing or declining over time?
 - Which records should be corrected before reporting?
+
+## Data-quality priorities
+
+The project prioritizes accurate customer identities, reliable revenue calculations, and complete product references.
