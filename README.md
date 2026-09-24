@@ -14,3 +14,14 @@ The project will also identify data problems such as missing customer informatio
 - Data-quality profiling
 - Automated validation tests
 - Reproducible local setup
+
+## Business questions
+
+This project is designed to answer questions such as:
+
+- Who are our highest-value customers?
+- Which customers have never purchased?
+- Which product categories generate the most revenue?
+- Which products perform best within each category?
+- Is revenue increasing or declining over time?
+- Which records should be corrected before reporting?
