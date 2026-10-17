@@ -1,10 +1,11 @@
 .git
 .gitignore
 .vscode
-.venv
+venv_retail
 __pycache__
 *.pyc
 *.log
 .pytest_cache
 data/generated
+README.md
 .env
