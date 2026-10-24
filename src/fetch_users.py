@@ -3,7 +3,9 @@ import os
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
+from dotenv import load_dotenv
 
+load_dotenv()
 
 def main( ) -> None:
     api_url = os.getenv("USERS_API_URL")
@@ -12,14 +14,11 @@ def main( ) -> None:
         print("USERS_API_URL is not configured")
         return
 
-    api_token = os.getenv("API_TOKEN")
 
     headers = {
         "Accept": "application/json",
     }
 
-    if api_token:
-        headers["Authorization"] = f"Bearer {api_token}"
 
     request = Request(
         api_url,
@@ -34,7 +33,7 @@ def main( ) -> None:
         if not isinstance(users, list):
             raise ValueError("Expected the API response to be a list")
 
-        output_path = Path("data/users_from_api.json")
+        output_path = Path("data/users.json")
         output_path.parent.mkdir(parents=True, exist_ok=True)
 
         with output_path.open("w", encoding="utf-8") as file:
@@ -54,6 +53,7 @@ def main( ) -> None:
 
     except ValueError as error:
         print(f"Invalid API response: {error}")
+
 
 
 if __name__ == "__main__":
