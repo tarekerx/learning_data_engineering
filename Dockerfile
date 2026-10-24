@@ -2,8 +2,9 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-COPY src ./src
-COPY data/users.json ./data/users.json
-ENV PYTHONDONTWRITEBYTECODE=1
+COPY reqs.txt .
+RUN pip install --no-cache-dir -r reqs.txt
 
-CMD ["python","src/fetch_users.py"]
+COPY . .
+
+CMD ["python","src/convert_users.py","rc/fetch_users.py"]

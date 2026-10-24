@@ -1,4 +1,4 @@
-.venv/
+venv_retail/
 __pycache__/
 *.py[cod]
 .env
@@ -7,4 +7,3 @@ data/generated/
 .pytest_cache/
 .vscode/
 .data/
-venv_retail
