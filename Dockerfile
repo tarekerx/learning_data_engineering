@@ -11,4 +11,4 @@ WORKDIR /app
 # Copy only the compiled packages from the builder stage!
 COPY --from=builder /install /usr/local
 COPY . .
-CMD ["python", "src/convert_users.py"]
+CMD ["python", "src/main.py"]
